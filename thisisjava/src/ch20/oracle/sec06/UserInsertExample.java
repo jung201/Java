@@ -41,7 +41,9 @@ public class UserInsertExample {
 			pstmt.setInt(4, 25);
 			pstmt.setString(5, "winter@mycompany.com");
 
-			// SQL 문 실행
+			// SQL문 실행
+			// insert, update, delete 일 경우에는 executeUpdate() 메소드 호출
+			// 데이터를 가져오는 select 일 경우에는 executeQuery() 메소드 호출
 			int rows = pstmt.executeUpdate();
 			System.out.println("저장된 행 수 : " + rows);
 

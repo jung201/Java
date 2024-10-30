@@ -32,7 +32,9 @@ public class BoardDeleteExample {
 			// 인젝션 방지와 성능 향상에 유리한 방식
 			PreparedStatement pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, "winter");
-
+			
+			// insert, update, delete 일 경우에는 executeUpdate() 메소드 호출
+			// 데이터를 가져오는 select 일 경우에는 executeQuery() 메소드 호출
 			int rows = pstmt.executeUpdate();
 			System.out.println("삭제된 행 수 : " + rows);
 

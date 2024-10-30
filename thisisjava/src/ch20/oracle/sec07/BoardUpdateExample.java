@@ -48,6 +48,8 @@ public class BoardUpdateExample {
             pstmt.setInt(5, 3);  //boards 테이블에 있는 게시물 번호(bno) 지정
 
             //SQL문 실행
+            // insert, update, delete 일 경우에는 executeUpdate() 메소드 호출
+         	// 데이터를 가져오는 select 일 경우에는 executeQuery() 메소드 호출
             int rows = pstmt.executeUpdate();
             System.out.println("수정된 행 수: " + rows);
 
