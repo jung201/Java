@@ -10,7 +10,6 @@ public class ConnectionExample {
 		
 		// try 안에도 있고 finally 안에도 있어서 전역변수로
 		Connection conn = null;
-
 		try {
 			// JDBC Driver 등록
 			// 오라클 드라이버 연결 방식 - 통신준비

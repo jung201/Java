@@ -8,7 +8,6 @@ import java.sql.SQLException;
 import java.io.FileInputStream;
 
 public class BoardInsertExample {
-
 	public static void main(String[] args) {
 		
 		// 오라클 DB board에 insert 하기
@@ -29,8 +28,9 @@ public class BoardInsertExample {
 					);
 
 			// 매개변수화된 SQL문 작성
-			String sql = "" + "INSERT INTO boards (bno, btitle, bcontent, bwriter, bdate, bfilename, bfiledata) "
-					+ "VALUES (SEQ_BNO.NEXTVAL, ?, ?, ?, SYSDATE, ?, ?)";
+			String sql = "" + 
+				"INSERT INTO boards (bno, btitle, bcontent, bwriter, bdate, bfilename, bfiledata) "
+				+ "VALUES (SEQ_BNO.NEXTVAL, ?, ?, ?, SYSDATE, ?, ?)";
 			
 			// PreparedStatement 얻기 및 값 지정
 			// JDBC ( Java Database Connectivity )에서 SQL 쿼리를 사전에 컴파일 하고 실행할 준비를
@@ -41,8 +41,9 @@ public class BoardInsertExample {
 			// PreparedStatement를 생성할 때 사용되는 코드로, SQL 실행 후 특정 열(컬럼)의 값을
 			// 반환받기 위한 설정을 포함
 			PreparedStatement pstmt = conn.prepareStatement(sql, new String[] { "bno" });
-			pstmt.setString(1, "눈오는 날");
-			pstmt.setString(2, "함박눈이 내려요.");
+			
+			pstmt.setString(1, "크리스마스");
+			pstmt.setString(2, "메리 크리스마스~");
 			pstmt.setString(3, "winter");
 			pstmt.setString(4, "snow.jpg");
 			pstmt.setBlob(5, new FileInputStream("src/ch20/oracle/sec06/snow.jpg"));

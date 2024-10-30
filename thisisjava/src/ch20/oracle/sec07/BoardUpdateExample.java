@@ -41,11 +41,11 @@ public class BoardUpdateExample {
          	// PreparedStatement는 SQL 쿼리에 동적으로 매개변수 값을 설정할 수 있게 하며, SQL 
          	// 인젝션 방지와 성능 향상에 유리한 방식
             PreparedStatement pstmt = conn.prepareStatement(sql);
-            pstmt.setString(1, "눈사람");
-            pstmt.setString(2, "눈으로 만든 사람");
-            pstmt.setString(3, "snowman.jpg");
-            pstmt.setBlob(4, new FileInputStream("src/ch20/oracle/sec07/snowman.jpg"));
-            pstmt.setInt(5, 3);  //boards 테이블에 있는 게시물 번호(bno) 지정
+            pstmt.setString(1, "크리스마스");
+            pstmt.setString(2, "메리 크리스마스");
+            pstmt.setString(3, "chrismas.jpg");
+            pstmt.setBlob(4, new FileInputStream("src/ch20/oracle/sec06/chrismas.jpg"));
+            pstmt.setInt(5, 4);  //boards 테이블에 있는 게시물 번호(bno) 지정
 
             //SQL문 실행
             // insert, update, delete 일 경우에는 executeUpdate() 메소드 호출

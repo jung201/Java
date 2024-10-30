@@ -23,7 +23,7 @@ public class BoardDeleteExample {
 					"human" // 비번
 					);
 			
-			String sql = "DELETE FROM boards WHERE bwriter=?";
+			String sql = "DELETE FROM boards WHERE bno=?";
 
 			// PreparedStatement 얻기 및 값 지정
 			// JDBC ( Java Database Connectivity )에서 SQL 쿼리를 사전에 컴파일 하고 실행할 준비를
@@ -31,7 +31,7 @@ public class BoardDeleteExample {
 			// PreparedStatement는 SQL 쿼리에 동적으로 매개변수 값을 설정할 수 있게 하며, SQL 
 			// 인젝션 방지와 성능 향상에 유리한 방식
 			PreparedStatement pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, "winter");
+			pstmt.setInt(1,4);
 			
 			// insert, update, delete 일 경우에는 executeUpdate() 메소드 호출
 			// 데이터를 가져오는 select 일 경우에는 executeQuery() 메소드 호출
@@ -51,7 +51,6 @@ public class BoardDeleteExample {
 				}
 			}
 		}
-		
 		
 	}
 }
