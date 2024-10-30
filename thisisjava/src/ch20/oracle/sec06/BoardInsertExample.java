@@ -44,9 +44,9 @@ public class BoardInsertExample {
 			
 			pstmt.setString(1, "크리스마스");
 			pstmt.setString(2, "메리 크리스마스~");
-			pstmt.setString(3, "winter");
-			pstmt.setString(4, "snow.jpg");
-			pstmt.setBlob(5, new FileInputStream("src/ch20/oracle/sec06/snow.jpg"));
+			pstmt.setString(3, "chrismas");
+			pstmt.setString(4, "chrismas.jpg");
+			pstmt.setBlob(5, new FileInputStream("src/ch20/oracle/sec06/chrismas.jpg"));
 
 			// SQL문 실행
 			// insert, update, delete 일 경우에는 executeUpdate() 메소드 호출

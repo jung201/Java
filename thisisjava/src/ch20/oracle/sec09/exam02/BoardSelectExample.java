@@ -51,15 +51,15 @@ public class BoardSelectExample {
 				System.out.println(board);
 
 				// 파일로 저장
-//                Blob blob = board.getBfiledata();
-//                if(blob != null) {
-//                    InputStream is = blob.getBinaryStream();
-//                    OutputStream os = new FileOutputStream("C:/Temp/" + board.getBfilename());
-//                    is.transferTo(os);
-//                    os.flush();
-//                    os.close();
-//                    is.close();
-//                }
+                Blob blob = board.getBfiledata();
+                if(blob != null) {
+                    InputStream is = blob.getBinaryStream();
+                    OutputStream os = new FileOutputStream("C:/Temp/" + board.getBfilename());
+                    is.transferTo(os);
+                    os.flush();
+                    os.close();
+                    is.close();
+                }
 			}
 			rs.close();
 
