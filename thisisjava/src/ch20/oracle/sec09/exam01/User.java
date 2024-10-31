@@ -9,8 +9,11 @@ public class User {
 		private String userPassword;
 		private int userAge;
 		private String userEmail;
+<<<<<<< HEAD
 		public void setUserId(String string) {
 			// TODO Auto-generated method stub
 			
 		}
+=======
+>>>>>>> 144ca49dfc5914fcb5980b7401e734f2b1c6ad90
 }
