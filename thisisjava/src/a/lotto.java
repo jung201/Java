@@ -23,7 +23,7 @@ public class lotto {
 		} 
 		System.out.println(Arrays.toString(lotto));
 		
-		// HashSet을 사용해 중복 없는 숫자를 저장.
+		// HashSet을 사용해 중복 없는 숫자를 저장.111
 		// Random 클래스를 사용해 1부터 45까지의 숫자를 무작위로 생성
 		// 로또 번호를 배열로 변환 후 정렬하여 출력.
 		
