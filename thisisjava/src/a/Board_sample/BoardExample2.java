@@ -6,7 +6,7 @@ public class BoardExample2 {
 	// field
 	private Scanner scanner = new Scanner(System.in);
 	
-	// constru1212ctor
+	// constructor
 	
 	//mathod
 	public void list () {

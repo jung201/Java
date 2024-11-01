@@ -4,9 +4,14 @@ import lombok.Data;
 
 @Data
 public class User {
-		private String userId;
-		private String userName;
-		private String userPassword;
-		private int userAge;
-		private String userEmail;
+	private String userId;
+	private String userName;
+	private String userPassword;
+	private int userAge;
+	private String userEmail;
+
+	public void setUserId(String string) {
+		this.userId = userId;
+	}
+
 }
