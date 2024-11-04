@@ -73,6 +73,7 @@ class Roulette {
 		if (attempt > 0) {
 			System.out.println("잔여시도 횟수가 남아있어 마감할 수 없습니다");
 		} else {
+			System.out.println();
 			System.out.println("총 매출액은 : " + sales + "원 입니다");
 		}
 	}
