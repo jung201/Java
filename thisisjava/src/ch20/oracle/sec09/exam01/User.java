@@ -10,7 +10,7 @@ public class User {
 	private int userAge;
 	private String userEmail;
 
-	public void setUserId(String string) {
+	public void setUserId(String userId) {
 		this.userId = userId;
 	}
 
