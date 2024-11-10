@@ -18,8 +18,10 @@
 <%
     request.setCharacterEncoding("utf-8");
     String _name = request.getParameter("name");
+    
     MemberVO memberVO = new MemberVO();
     memberVO.setName(_name);
+    
     MemberDAO dao = new MemberDAO();
     List membersList = dao.listMembers(memberVO);
 %>

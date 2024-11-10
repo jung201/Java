@@ -12,7 +12,7 @@ import javax.naming.InitialContext;
 import javax.sql.DataSource;
 
 public class MemberDAO {
-	
+
 	// 필드
 	private Connection con; // DB와의 연결을 관리하는 객체
 	private PreparedStatement pstmt; // SQL문을 미리 컴파일 하고 실행하는 객체
@@ -36,8 +36,8 @@ public class MemberDAO {
 			con = dataFactory.getConnection();
 			String query = "select * from t_member ";
 
-			if ((_name != null && _name.length() != 0)) { // null이 아니고 빈 문자열이 아니라면 
-				query += " where name=?";				  // where절을 통해 특정 이름에 해당하는 회원만 조회
+			if ((_name != null && _name.length() != 0)) { // null이 아니고 빈 문자열이 아니라면
+				query += " where name=?"; // where절을 통해 특정 이름에 해당하는 회원만 조회
 				pstmt = con.prepareStatement(query);
 				pstmt.setString(1, _name);
 			} else {
