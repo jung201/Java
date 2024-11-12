@@ -43,4 +43,7 @@
 </head>
 <body>
        <a id="checkJson" style="cursor:pointer">회원 정보 수신하기</a><br><br>
-    <div id="output"></div>
+  	   <div id="output"></div>
+</body>
+</html>
+    
